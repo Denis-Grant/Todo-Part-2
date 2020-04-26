@@ -2,5 +2,67 @@
 @import url("vendor/skeleton.css");
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #3C3164;
+}
+
+body ul {
+  list-style: none;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.todo .todo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+}
+
+.todo .todo__wrapper h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.todo .todo__wrapper #form input {
+  width: 100%;
+  color: gray;
+  background-color: #302752;
+  border: none;
+}
+
+.todo .todo__wrapper #form ul li {
+  padding: 10px 10px;
+  text-transform: lowercase;
+  color: #ffffffba;
+  background-color: #4C3C79;
+  border-radius: 3px;
+  margin-bottom: 1px;
+}
+
+.todo .todo__wrapper #form ul li .trash {
+  float: right;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.todo .todo__wrapper #form p {
+  text-align: center;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
